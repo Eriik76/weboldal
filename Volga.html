@@ -1,57 +1,211 @@
-<html>
- <head>
-  <title>
-      Volga
-  </title>
- </head>
 
-    <head> <h3> <a href="Europa.html"> Visszalépés </a> </h3> </head>
+<!DOCTYPE html>
+<html lang="hu">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Volga</title>
 
- <br> 
- <body bgcolor="C7C1C1">
-    <h1 style="text-align:center"> 
-        <font face="verdana" color=black> <strong> Volga </strong> </font>
-    </h1>
+    <style>
+        body {
+            background-color: #B7DDE8;
+            font-family: Verdana;
+            color: #263F46;
+            margin: 30px;
+        }
 
-<ul> 
-    <li> <h4> <font face="verdana" color=202BA1> <strong> Ország(ok): </strong> </font>	 <font face="verdana" color=black> <strong> Oroszország </strong> </font> </h4> </li>
-    <li> <h4> <font face="verdana" color=202BA1> <strong> Hossz: </strong> </font>	 <font face="verdana" color=black> <strong> 3690 km </strong> </font> </h4> </li>
-    <li> <h4> <font face="verdana" color=202BA1> <strong> Forrásszint: </strong> </font>	 <font face="verdana" color=black> <strong> 225 m </strong> </font> </h4> </li>
-    <li> <h4> <font face="verdana" color=202BA1> <strong> Vízhozam: </strong> </font>	 <font face="verdana" color=black> <strong> 8000 m³/s </strong> </font> </h4> </li>
-    <li> <h4> <font face="verdana" color=202BA1> <strong> Vízgyűjtő terület: </strong> </font>	 <font face="verdana" color=black> <strong> 1 410 994 km² </strong> </font> </h4> </li>
-    <li> <h4> <font face="verdana" color=202BA1> <strong> Forrás: </strong> </font>	 <font face="verdana" color=black> <strong> Valdaj-hátság </strong> </font> </h4> </li>
-    <li> <h4> <font face="verdana" color=202BA1> <strong> Torkolat: </strong> </font>	 <font face="verdana" color=black> <strong> Kaszpi-tenger </strong> </font> </h4> </li>
-</ul> 
+        h1 {
+            text-align: center;
+            color: #164A63;
+            margin-bottom: 30px;
+        }
 
-<br>
-<br>
+        h3 {
+            color: #164A63;
+        }
 
-    <h4> <font face="verdana" color=black> <strong> Mellékfolyók: </strong> </font> </h4>
+        .vissza {
+            margin-bottom: 25px;
+        }
 
-<ol>
-    <li> <h5> <font face="verdana" color=black> Mologa </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Sekszna </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Kosztroma </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Unzsa </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Vetluga </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Káma </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Szamara </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Nagy-Cseremsam </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Nagy-Irgiz </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Kis-Irgiz </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Oka </font> </h5> </li>
-    <li> <h5> <font face="verdana" color=black> Szura </font> </h5> </li>
-</ol>
+        .vissza a {
+            color: #164A63;
+        }
 
+        .szoveg {
+            width: 85%;
+            margin: auto;
+            line-height: 1.7;
+        }
 
+        .adatok {
+            background-color: #E8F6FA;
+            width: 75%;
+            margin: 25px auto;
+            border-collapse: collapse;
+        }
 
-    <footer> Több információ: <a href="https://hu.wikipedia.org/wiki/Volga"> Wikipedia  </a> </footer>
-     <br>
+        .adatok td {
+            border: 1px solid #9CCAD6;
+            padding: 12px;
+        }
 
-    <br>
-    <img src="river.jpg" alt="hiba a képmegjelenítés során">     
+        .adatok td:first-child {
+            color: #164A63;
+            font-weight: bold;
+            width: 45%;
+        }
 
+        .adatok tr:hover {
+            background-color: #D2EDF3;
+        }
 
- </body>
+        .mellekfolyok {
+            width: 75%;
+            margin: 25px auto;
+            line-height: 1.8;
+        }
+
+        .mellekfolyok h3 {
+            color: #164A63;
+        }
+
+        img {
+            display: block;
+            width: 500px;
+            max-width: 90%;
+            margin: 30px auto;
+            border: 3px solid #73BBD1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #164A63;
+        }
+
+        a {
+            color: #164A63;
+        }
+
+        a:hover {
+            color: #287F9C;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="vissza">
+        <h3>
+            <a href="Europa.html">← Visszalépés</a>
+        </h3>
+    </div>
+
+    <h1><u>Volga</u></h1>
+
+    <div class="szoveg">
+
+        <h4>
+            A Volga Európa leghosszabb folyója, amely teljes egészében
+            Oroszország területén található. A Valdaj-hátságon ered,
+            és hosszú útja után a Kaszpi-tengerbe ömlik.
+
+            <br><br>
+
+            A folyó fontos szerepet játszik Oroszország közlekedésében
+            és gazdaságában. Sok nagyváros található a partján,
+            például Nyizsnyij Novgorod, Kazany és Volgográd.
+
+            <br><br>
+
+            A Volgát gyakran Oroszország egyik legfontosabb folyójának
+            tartják. Vizét közlekedésre, öntözésre és energiatermelésre
+            is használják.
+        </h4>
+
+    </div>
+
+    <h3 style="text-align:center;">
+        A Volga fontosabb adatai
+    </h3>
+
+    <table class="adatok">
+
+        <tr>
+            <td>Ország</td>
+            <td>Oroszország</td>
+        </tr>
+
+        <tr>
+            <td>Hossz</td>
+            <td>3690 km</td>
+        </tr>
+
+        <tr>
+            <td>Forrásszint</td>
+            <td>225 m</td>
+        </tr>
+
+        <tr>
+            <td>Vízhozam</td>
+            <td>8000 m³/s</td>
+        </tr>
+
+        <tr>
+            <td>Vízgyűjtő terület</td>
+            <td>1 410 994 km²</td>
+        </tr>
+
+        <tr>
+            <td>Forrás</td>
+            <td>Valdaj-hátság</td>
+        </tr>
+
+        <tr>
+            <td>Torkolat</td>
+            <td>Kaszpi-tenger</td>
+        </tr>
+
+    </table>
+
+    <div class="mellekfolyok">
+
+        <h3>Mellékfolyói</h3>
+
+        <p>
+            A Volgába sok kisebb és nagyobb folyó torkollik.
+            Ezek közül a legismertebbek:
+        </p>
+
+        <ol>
+            <li>Mologa</li>
+            <li>Sekszna</li>
+            <li>Kosztroma</li>
+            <li>Unzsa</li>
+            <li>Vetluga</li>
+            <li>Káma</li>
+            <li>Szamara</li>
+            <li>Nagy-Cseremsam</li>
+            <li>Nagy-Irgiz</li>
+            <li>Kis-Irgiz</li>
+            <li>Oka</li>
+            <li>Szura</li>
+        </ol>
+
+    </div>
+
+    <img src="river.jpg" alt="A Volga folyó">
+
+    <footer>
+        <h4>
+            Több információ:
+            <a href="https://hu.wikipedia.org/wiki/Volga">
+                Wikipedia
+            </a>
+        </h4>
+    </footer>
+
+</body>
 </html>
